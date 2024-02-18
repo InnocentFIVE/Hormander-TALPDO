@@ -1,0 +1,1565 @@
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.24)  17 FEB 2024 11:13
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**TALPDO
+(./TALPDO.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22> (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(c:/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count181
+\c@section=\count182
+\c@subsection=\count183
+\c@subsubsection=\count184
+\c@paragraph=\count185
+\c@subparagraph=\count186
+\c@figure=\count187
+\c@table=\count188
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen143
+\pgfutil@tempdimb=\dimen144
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box51
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks18
+\pgfkeys@temptoks=\toks19
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks20
+))) (c:/texlive/2023/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen145
+\pgf@xa=\dimen146
+\pgf@xb=\dimen147
+\pgf@xc=\dimen148
+\pgf@y=\dimen149
+\pgf@ya=\dimen150
+\pgf@yb=\dimen151
+\pgf@yc=\dimen152
+\c@pgf@counta=\count189
+\c@pgf@countb=\count190
+\c@pgf@countc=\count191
+\c@pgf@countd=\count192
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen153
+\pgfmath@count=\count193
+\pgfmath@box=\box52
+\pgfmath@toks=\toks21
+\pgfmath@stack@operand=\toks22
+\pgfmath@stack@operation=\toks23
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count194
+))) (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen154
+\pgffor@skip=\dimen155
+\pgffor@stack=\toks24
+\pgffor@toks=\toks25
+)) (c:/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2023/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+\pgf@x=\dimen156
+\pgf@y=\dimen157
+\pgf@xa=\dimen158
+\pgf@ya=\dimen159
+\pgf@xb=\dimen160
+\pgf@yb=\dimen161
+\pgf@xc=\dimen162
+\pgf@yc=\dimen163
+\pgf@xd=\dimen164
+\pgf@yd=\dimen165
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count195
+\c@pgf@countb=\count196
+\c@pgf@countc=\count197
+\c@pgf@countd=\count198
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+\pgf@sys@id@count=\count199
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-xetex.def
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count266
+))) (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count267
+\pgfsyssoftpath@bigbuffer@items=\count268
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 227.
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen166
+\pgf@picmaxx=\dimen167
+\pgf@picminy=\dimen168
+\pgf@picmaxy=\dimen169
+\pgf@pathminx=\dimen170
+\pgf@pathmaxx=\dimen171
+\pgf@pathminy=\dimen172
+\pgf@pathmaxy=\dimen173
+\pgf@xx=\dimen174
+\pgf@xy=\dimen175
+\pgf@yx=\dimen176
+\pgf@yy=\dimen177
+\pgf@zx=\dimen178
+\pgf@zy=\dimen179
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen180
+\pgf@path@lasty=\dimen181
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen182
+\pgf@shorten@start@additional=\dimen183
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box53
+\pgf@hbox=\box54
+\pgf@layerbox@main=\box55
+\pgf@picture@serial@count=\count269
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen184
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen185
+\pgf@pt@y=\dimen186
+\pgf@pt@temp=\dimen187
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen188
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen189
+\pgf@sys@shading@range@num=\count270
+\pgf@shadingcount=\count271
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box56
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box57
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen190
+\pgf@nodesepend=\dimen191
+) (c:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count272
+\pgfplotmarksize=\dimen192
+)
+\tikz@lastx=\dimen193
+\tikz@lasty=\dimen194
+\tikz@lastxsaved=\dimen195
+\tikz@lastysaved=\dimen196
+\tikz@lastmovetox=\dimen197
+\tikz@lastmovetoy=\dimen198
+\tikzleveldistance=\dimen199
+\tikzsiblingdistance=\dimen256
+\tikz@figbox=\box58
+\tikz@figbox@bg=\box59
+\tikz@tempbox=\box60
+\tikz@tempbox@bg=\box61
+\tikztreelevel=\count273
+\tikznumberofchildren=\count274
+\tikznumberofcurrentchild=\count275
+\tikz@fig@count=\count276
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count277
+\pgfmatrixcurrentcolumn=\count278
+\pgf@matrix@numberofcolumns=\count279
+)
+\tikz@expandcount=\count280
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count281
+\Gm@cntv=\count282
+\c@Gm@tempcnt=\count283
+\Gm@bindingoffset=\dimen257
+\Gm@wd@mp=\dimen258
+\Gm@odd@mp=\dimen259
+\Gm@even@mp=\dimen260
+\Gm@layoutwidth=\dimen261
+\Gm@layoutheight=\dimen262
+\Gm@layouthoffset=\dimen263
+\Gm@layoutvoffset=\dimen264
+\Gm@dimlist=\toks29
+) (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
+\g__graphics_track_int=\count284
+\l__pdf_internal_box=\box62
+\g__pdf_backend_object_int=\count285
+\g__pdf_backend_annotation_int=\count286
+\g__pdf_backend_link_int=\count287
+) (./TALPDO.aux)
+\openout1 = `TALPDO.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 10.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(119.50279pt, 557.67157pt, 119.50279pt)
+* v-part:(T,H,B)=(143.40335pt, 836.50737pt, 215.10503pt)
+* \paperwidth=796.67715pt
+* \paperheight=1195.01575pt
+* \textwidth=557.67157pt
+* \textheight=836.50737pt
+* \oddsidemargin=47.2328pt
+* \evensidemargin=47.2328pt
+* \topmargin=34.13336pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 1>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 3>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 2>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 4>
+[1
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 5>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 7>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 6>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 8>
+ [2
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 9>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 11>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 10>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 12>
+ [3
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 13>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 15>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 14>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 16>
+ [4
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 17>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 19>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 18>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 20>
+ [5
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 21>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 23>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 22>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 24>
+ [6
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 25>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 27>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 26>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 28>
+ [7
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 29>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 31>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 30>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 32>
+ [8
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 33>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 35>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 34>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 36>
+ [9
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 37>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 39>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 38>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 40>
+ [10
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 41>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 43>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 42>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 44>
+ [11
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 45>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 47>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 46>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 48>
+ [12
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 49>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 51>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 50>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 52>
+ [13
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 53>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 55>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 54>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 56>
+ [14
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 57>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 59>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 58>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 60>
+ [15
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 61>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 63>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 62>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 64>
+ [16
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 65>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 67>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 66>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 68>
+ [17
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 69>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 71>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 70>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 72>
+ [18
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 73>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 75>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 74>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 76>
+ [19
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 77>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 79>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 78>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 80>
+ [20
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 81>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 83>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 82>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 84>
+ [21
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 85>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 87>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 86>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 88>
+ [22
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 89>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 91>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 90>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 92>
+ [23
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 93>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 95>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 94>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 96>
+ [24
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 97>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 99>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 98>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 100>
+ [25
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 101>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 103>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 102>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 104>
+ [26
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 105>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 107>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 106>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 108>
+ [27
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 109>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 111>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 110>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 112>
+ [28
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 113>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 115>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 114>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 116>
+ [29
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 117>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 119>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 118>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 120>
+ [30
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 121>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 123>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 122>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 124>
+ [31
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 125>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 127>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 126>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 128>
+ [32
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 129>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 131>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 130>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 132>
+ [33
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 133>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 135>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 134>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 136>
+ [34
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 137>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 139>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 138>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 140>
+ [35
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 141>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 143>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 142>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 144>
+ [36
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 145>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 147>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 146>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 148>
+ [37
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 149>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 151>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 150>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 152>
+ [38
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 153>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 155>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 154>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 156>
+ [39
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 157>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 159>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 158>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 160>
+ [40
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 161>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 163>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 162>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 164>
+ [41
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 165>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 167>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 166>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 168>
+ [42
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 169>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 171>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 170>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 172>
+ [43
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 173>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 175>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 174>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 176>
+ [44
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 177>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 179>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 178>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 180>
+ [45
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 181>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 183>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 182>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 184>
+ [46
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 185>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 187>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 186>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 188>
+ [47
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 189>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 191>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 190>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 192>
+ [48
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 193>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 195>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 194>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 196>
+ [49
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 197>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 199>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 198>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 200>
+ [50
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 201>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 203>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 202>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 204>
+ [51
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 205>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 207>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 206>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 208>
+ [52
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 209>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 211>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 210>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 212>
+ [53
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 213>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 215>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 214>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 216>
+ [54
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 217>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 219>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 218>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 220>
+ [55
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 221>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 223>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 222>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 224>
+ [56
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 225>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 227>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 226>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 228>
+ [57
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 229>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 231>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 230>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 232>
+ [58
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 233>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 235>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 234>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 236>
+ [59
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 237>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 239>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 238>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 240>
+ [60
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 241>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 243>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 242>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 244>
+ [61
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 245>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 247>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 246>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 248>
+ [62
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 249>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 251>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 250>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 252>
+ [63
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 253>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 255>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 254>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 256>
+ [64
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 257>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 259>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 258>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 260>
+ [65
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 261>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 263>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 262>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 264>
+ [66
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 265>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 267>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 266>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 268>
+ [67
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 269>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 271>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 270>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 272>
+ [68
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 273>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 275>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 274>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 276>
+ [69
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 277>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 279>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 278>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 280>
+ [70
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 281>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 283>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 282>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 284>
+ [71
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 285>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 287>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 286>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 288>
+ [72
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 289>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 291>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 290>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 292>
+ [73
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 293>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 295>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 294>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 296>
+ [74
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 297>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 299>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 298>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 300>
+ [75
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 301>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 303>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 302>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 304>
+ [76
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 305>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 307>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 306>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 308>
+ [77
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 309>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 311>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 310>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 312>
+ [78
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 313>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 315>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 314>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 316>
+ [79
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 317>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 319>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 318>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 320>
+ [80
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 321>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 323>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 322>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 324>
+ [81
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 325>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 327>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 326>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 328>
+ [82
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 329>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 331>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 330>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 332>
+ [83
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 333>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 335>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 334>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 336>
+ [84
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 337>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 339>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 338>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 340>
+ [85
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 341>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 343>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 342>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 344>
+ [86
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 345>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 347>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 346>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 348>
+ [87
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 349>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 351>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 350>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 352>
+ [88
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 353>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 355>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 354>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 356>
+ [89
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 357>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 359>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 358>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 360>
+ [90
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 361>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 363>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 362>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 364>
+ [91
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 365>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 367>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 366>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 368>
+ [92
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 369>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 371>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 370>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 372>
+ [93
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 373>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 375>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 374>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 376>
+ [94
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 377>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 379>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 378>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 380>
+ [95
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 381>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 383>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 382>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 384>
+ [96
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 385>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 387>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 386>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 388>
+ [97
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 389>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 391>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 390>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 392>
+ [98
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 393>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 395>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 394>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 396>
+ [99
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 397>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 399>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 398>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 400>
+ [100
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 401>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 403>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 402>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 404>
+ [101
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 405>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 407>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 406>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 408>
+ [102
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 409>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 411>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 410>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 412>
+ [103
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 413>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 415>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 414>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 416>
+ [104
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 417>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 419>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 418>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 420>
+ [105
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 421>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 423>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 422>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 424>
+ [106
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 425>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 427>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 426>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 428>
+ [107
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 429>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 431>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 430>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 432>
+ [108
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 433>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 435>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 434>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 436>
+ [109
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 437>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 439>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 438>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 440>
+ [110
+
+]
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 441>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 443>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 442>
+File: source new.pdf Graphic file (type pdf)
+<use source new.pdf, page 444>
+ [111
+
+] (./TALPDO.aux) ) 
+Here is how much of TeX's memory you used:
+ 13790 strings out of 476683
+ 301134 string characters out of 5807574
+ 1845012 words of memory out of 5000000
+ 33871 multiletter control sequences out of 15000+600000
+ 512295 words of font info for 33 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 79i,7n,89p,413b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on TALPDO.pdf (111 pages).

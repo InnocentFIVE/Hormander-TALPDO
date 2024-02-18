@@ -1,0 +1,885 @@
+
+\chapter{Definition and Basic Properties of Distributions}
+\section*{Summary}
+In the introduction we have seen how various difficulties in the theory of partial differential equations and in Fourier analysis lead one to extend the space of continuous functions to the space of distributions. In \Cref{Section 2.1} we make the definition explicit and precise, using the properties of test functions proved in Chapter I. The weak topology in the space of distributions is also introduced there. The notion of support is extended to distributions in \Cref{Section 2.2} and it is shown there that distributions may be defined locally provided that the local definitions are compatible. In addition it is proved that if $u$ is a distribution then there is a unique way to define $u(\phi)$ for all $\phi \in C^{\infty}$ with supp $u \cap \operatorname{supp} \phi$ compact. The problem of estimating $u(\phi)$ in terms of the derivatives of $\phi$ on the support of $u$ only is discussed at some length in \Cref{Section 2.3}. The deepest result is Whitney's extension theorem (\Cref{Theorem 2.3.6}). We shall rarely need the results which follow from it so the reader might prefer to skip the section from \Cref{Theorem 2.3.6} on.
+
+\section{Basic Definitions}
+In the introduction we were led to consider expressions such as 
+\begin{equation}
+    \label{(2.1.1)}
+L(\phi)=\sum \int f_{\alpha} \partial^{\alpha} \phi d x, \quad \phi \in C_{0}^{\infty}(X)
+\end{equation}
+where $f_{\alpha} \in C(X)$ and the sum is finite. Here $X$ is an open set in $\mathbb{R}^{n}$. However, the same form $L$ may have many different representations of this kind, so in the following definition we just keep an obvious property of the expression \eqref{(2.1.1)}.
+
+\begin{defi}
+    A distribution $u$ in $X$ is a linear form on $C_{0}^{\infty}(X)$ such that for every compact set $K \subset X$ there exist constants $C$ and $k$ such that
+\begin{equation}
+    \label{(2.1.2)}
+|u(\phi)| \leqq C \sum_{|\alpha| \leqq k} \sup \left|\partial^{\alpha} \phi\right|, \quad \phi \in C_{0}^{\infty}(K) 
+\end{equation}
+The set of all distributions in $X$ is denoted by $\mathscr{D}^{\prime}(X)$. If the same integer $k$ can be used in \eqref{(2.1.2)} for every $K$ we say that $u$ is of order $\leqq k$, and we denote the set of such distributions by $\mathscr{D}^{\prime k}(X)$. Their union $\mathscr{D}_{F}^{\prime}(X)=\bigcup \mathscr{D}^{\prime k}(X)$ is the space of distributions of finite order.
+\end{defi}
+That $u$ is a linear form on $C_{0}^{\infty}(X)$ means of course that $u$ is a function from $C_{0}^{\infty}(X)$ to $\mathbb{C}$ such that
+\[
+u(a \phi+b \psi)=a u(\phi)+b u(\psi) ; \quad a, b \in \mathbb{C} ; \phi, \psi \in C_{0}^{\infty}(X)
+\]
+\begin{remark}
+    The reason for the traditional notation $\mathscr{D}^{\prime}(X)$ is that Laurent Schwartz used the notation $\mathscr{D}(X)$ instead of $C_{0}^{\infty}(X)$.
+\end{remark}
+
+The sum \eqref{(2.1.1)} defines a distribution of order $k$ if $f_{\alpha}=0$ when $|\alpha|>k$, and it defines a distribution whenever the sum is locally finite, that is, on every compact set there are only a finite number of functions $f_{\alpha}$ which do not vanish identically. We shall see later on that all distributions are in fact of the form \eqref{(2.1.1)}.
+
+\begin{example}
+    If $x_{0} \in X$ then $u(\phi)=\partial^{\alpha} \phi\left(x_{0}\right)$ defines a distribution of order $|\alpha|$. That the order is not smaller follows if we choose $\psi \in C_{0}^{\infty}$ with $\psi(0)=1$ and set $\phi_{\delta}(x)=\left(x-x_{0}\right)^{\alpha} \psi\left(\left(x-x_{0}\right) / \delta\right)$, for $u\left(\phi_{\delta}\right)=\alpha!$ and
+    \[
+    \sup \left|\partial^{\beta} \phi_{\delta}\right| \leqq C \delta^{|\alpha|-|\beta|} \rightarrow 0 \quad \text { when } \delta \rightarrow 0 \text { if }|\beta|<|\alpha|
+    \]
+    More generally, if $x_{j} \in X$ is a sequence of points with no limit point in $X$, and if $\alpha_{j}$ are multi-indices, then
+    \[
+    u(\phi)=\sum \partial^{\alpha_{j}} \phi\left(x_{j}\right)
+    \]
+    is a distribution in $X$ because a compact subset can only contain finitely many $x_{j}$. By the first part of the example we have $u \in \mathscr{D}_{F}^{\prime}(X)$ if and only if $\left|\alpha_{j}\right|$ is bounded; the order is then $\max |\alpha_{j}|$.
+    
+    The continuity condition in \Cref{Definition 2.1.1} guarantees that $u$ behaves well when acting on functions depending on parameters:
+\begin{theorem}
+    If $\phi(x, y) \in C^{\infty}(X \times Y)$ where $Y$ is an open set in $\mathbb{R}^{m}$, and if there is a compact set $K \subset X$ such that $\phi(x, y)=0$ when $x \notin K$, then
+    \[
+    y \rightarrow u(\phi(., y))
+    \]
+    is a $C^{\infty}$ function of $y$ if $u \in \mathscr{D}^{\prime}(X)$, and
+\end{theorem}
+   \begin{proof}
+    For fixed $y \in Y$ we have by Taylor's formula
+    \[
+    \phi(x, y+h)=\phi(x, y)+\sum h_{j} \partial \phi(x, y) / \partial y_{j}+\psi(x, y, h)
+    \]
+    \[
+    \sup _{x}\left|\partial_{x}^{\alpha} \psi(x, y, h)\right|=\bar{O}\left(|h|^{2}\right) \quad \text { as } h \rightarrow 0, \forall \alpha \text {. }
+    \]
+    Hence
+    \[
+    u(\phi(., y+h))=u(\phi(., y))+\sum h_{j} u\left(\partial \phi(., y) / \partial y_{j}\right)+O\left(|h|^{2}\right)
+    \]
+    which shows that $y \rightarrow u(\phi(., y))$ is differentiable and that
+    \[
+    \frac{\partial}{\partial y_{j}} u(\phi(., y))=u\left(\partial \phi(., y) / \partial y_{j}\right)
+    \]
+    Iteration of this result proves the theorem.
+   \end{proof}
+\end{example}
+
+The continuity condition (2.1.2) is often stated as a sequential continuity:
+
+Theorem 2.1.4. A linear form $u$ on $C_{0}^{\infty}(X)$ is a distribution if and only if $u\left(\phi_{j}\right) \rightarrow 0$ when $j \rightarrow \infty$ for every sequence $\phi_{j} \in C_{0}^{\infty}(X)$ converging to 0 in the sense that $\sup \left|\partial^{\alpha} \phi_{j}\right| \rightarrow 0$ for every fixed $\alpha$ and $\operatorname{supp} \phi_{j} \subset K$ for all $j$ and some fixed compact set $K \subset X$.
+
+Proof. It is obvious that (2.1.2) implies the condition in the theorem. On the other hand, suppose that there is a compact set $K \subset X$ such that (2.1.2) is not valid for any $C$ and $k$. Taking $C=k=j$ we conclude that for some $\phi_{j} \in C_{0}^{\infty}(K)$ we have
+
+\[
+\left|u\left(\phi_{j}\right)\right|>j \sum_{|\alpha| \leqq j} \sup \left|\partial^{\alpha} \phi_{j}\right|
+\]
+
+Since this condition is not changed if $\phi_{j}$ is multiplied by a constant factor, it is no restriction to assume that $u\left(\phi_{j}\right)=1$. Then we have $\left|\partial^{\alpha} \phi_{j}\right| \leqq 1 / j$ when $j \geqq|\alpha|$ so $\phi_{j} \rightarrow 0$ although $u\left(\phi_{j}\right)$ does not converge to 0 . Thus the condition in the theorem is not fulfilled either, which proves the assertion.
+
+A third equivalent form of the continuity condition is the following one:
+
+Theorem 2.1.5. $A$ linear form $u$ on $C_{0}^{\infty}(X)$ is a distribution if and only if there exist functions $\rho_{\alpha} \in C(X)$ such that
+
+
+\begin{equation*}
+|u(\phi)| \leqq \sum_{\alpha} \sup \left|\rho_{\alpha} \partial^{\alpha} \phi\right|, \quad \phi \in C_{0}^{\infty}(X) \tag{2.1.3}
+\end{equation*}
+
+
+and on each compact set in $X$ all but a finite number of the functions $\rho_{\alpha}$ vanish identically. One can take $\rho_{\alpha}=0$ when $|\alpha|>k$ if and only if $u$ is of order $\leqq k$.
+
+Proof. The sufficiency of (2.1.3) is obvious. On the other hand, let $u \in$ $\mathscr{D}^{\prime}(X)$. Take an increasing sequence of compact sets $K_{j} \subset X$ such that every compact subset of $X$ belongs to some $K_{j}$, and choose $\chi_{j} \in C_{0}^{\infty}(X)$ with $\chi_{j}=1$ in $K_{j}$ (Theorem 1.4.1). Writing $\psi_{j}=\chi_{j}-\chi_{j-1}$ if $j>1$ and $\psi_{1}$ $=\chi_{1}$ we have
+
+\[
+\phi=\sum_{1}^{\infty} \psi_{j} \phi \quad \text { if } \phi \in C_{0}^{\infty}(X)
+\]
+
+the sum is of course finite. Since the support of $\psi_{j} \phi$ is contained in that of $\psi_{j}$, Definition 2.1 .1 gives with suitable $C_{j}$ and increasing $k_{j}$
+
+\[
+|u(\phi)| \leqq \sum_{1}^{\infty}\left|u\left(\psi_{j} \phi\right)\right| \leqq \sum_{1}^{\infty} C_{j_{j}} \sup _{|\alpha| \leqq k_{j}} \sup \left|\partial^{\alpha}\left(\psi_{j} \phi\right)\right|
+\]
+
+If we note that $\sum 2^{-j}=1$ and differentiate the product, we obtain
+
+\[
+|u(\phi)| \leqq \sup _{j} 2^{j} C_{j} 2^{k_{j}} \sup _{|\alpha+\beta| \leqq k_{j}} \sup ^{2}\left|\partial^{\beta} \psi_{j} \partial^{\alpha} \phi\right|
+\]
+
+The functions
+
+\[
+\rho_{\alpha}(x)=\sup _{j} \sup _{|\alpha+\beta| \leqq k_{j}} 2^{j+k_{j}} C_{j}\left|\partial^{\beta} \psi_{j}\right|
+\]
+
+are continuous in $X$, for $\partial^{\beta} \psi_{j}=0$ on $K_{i}$ when $j>i$ so only a finite number of $j$ and $\beta$ must be considered. In addition $\rho_{\alpha}=0$ on $K_{i}$ if $|\alpha|>k_{i}$. Since
+
+\[
+2^{j+k_{j}} C_{j}\left|\partial^{\beta} \psi_{j} \partial^{\alpha} \phi\right| \leqq\left|\rho_{\alpha} \partial^{\alpha} \phi\right| \quad \text { if }|\alpha+\beta| \leqq k_{j}
+\]
+
+we obtain $|u(\phi)| \leqq \sup _{\alpha} \sup \left|\rho_{\alpha} \partial^{\alpha} \phi\right|$, which implies (2.1.3).
+
+We shall now derive a dual form of (2.1.3) which is quite close to (2.1.1). Let $\dot{C}(X)$ be the space of continuous functions in $X$ tending to 0 at the boundary, that is, which are arbitrarily small outside compact subsets. This is a Banach space with the maximum norm, and the dual space is the space of bounded measures in $X$. Let $B$ be the space of all arrays $U=\left\{u_{\alpha}\right\}$ with $u_{\alpha} \in \dot{C}(X)$ for every $\alpha$ and the norm
+
+\[
+\|U\|=\sum \sup \left|u_{\alpha}\right|
+\]
+
+If $L$ is a linear form on $B$ with norm $\leqq 1$, then
+
+\[
+L(U)=\sum \int u_{\alpha} d \mu_{\alpha}
+\]
+
+where $d \mu_{\alpha}$ is a measure in $X$ with total mass at most 1. Now (2.1.3) means that the map
+
+\[
+\left\{\rho_{\alpha} \partial^{\alpha} \phi\right\} \rightarrow u(\phi), \quad \phi \in C_{0}^{\infty}(X)
+\]
+
+is a linear form with norm at most 1 defined on a linear subspace of $B$. By the Hahn-Banach theorem it can be extended to a linear form $L$ of norm at most 1 on all of $B$, which means that there are measures $\mu_{a}$ with $\int\left|d \mu_{\alpha}\right| \leqq 1$ such that
+
+Writing $d v_{\alpha}=\rho_{\alpha} d \mu_{\alpha}$ we obtain
+
+\[
+u(\phi)=L\left(\left\{\rho_{\alpha} \partial^{\alpha} \phi\right\}\right)=\sum_{\alpha} \int \rho_{\alpha} \partial^{\alpha} \phi d \mu_{\alpha}
+\]
+
+$(2.1 .1)^{\prime}$
+
+\[
+u(\phi)=\sum \int \partial^{\alpha} \phi d v_{\alpha}, \quad \phi \in C_{0}^{\infty}(X)
+\]
+
+where the supports of the measures $d v_{\alpha}$ are locally finite.
+
+As in the introduction we identify the space of continuous functions in $X$ with a subspace of $\mathscr{D}^{\prime}(X)$ by assigning to each continuous function $f$ the distribution
+
+(2.1.4)
+
+$C_{0}^{\infty}(X) \ni \phi \rightarrow \int f \phi d x$
+
+which we also denote by $f$. This is legitimate since Theorem 1.2.4 shows that two functions defining the same distribution are identical. More generally we can make this identification when $f \in L_{\mathrm{loc}}^{1}(X)$, the spacc of functions which are integrable on compact subsets of $X$ modulo those which vanish almost everywhere. In fact, Theorem 1.2.5 shows that functions defining the same distribution are in the same equivalence class. We can also identify arbitrary measures with distributions of order 0 , for we have
+
+Theorem 2.1.6. If $u \in \mathscr{D}^{\prime k}(X)$ we can in a unique way extend $u$ to a linear form on $C_{0}^{k}(X)$ such that (2.1.2) remains valid for all $\phi \in C_{0}^{k}(K)$ and some constant $C$.
+
+Proof. It follows from Theorem 1.3.2 that for every $\phi \in C_{0}^{k}(X)$ we can find a sequence $\phi_{v} \in C_{0}^{\infty}(X)$ with support in a fixed compact neighborhood $K$ of supp $\phi$, so that
+
+
+\begin{equation*}
+\sum_{|\alpha| \leqq k} \sup \left|\partial^{\alpha}\left(\phi-\phi_{v}\right)\right| \rightarrow 0, \quad v \rightarrow \infty \tag{2.1.5}
+\end{equation*}
+
+
+Thus we must define $u(\phi)=\lim u\left(\phi_{v}\right)$. This limit exists, for (2.1.5) implies in view of (2.1.2) that when $v, \mu \rightarrow \infty$ we have
+
+\[
+\left|u\left(\phi_{v}\right)-u\left(\phi_{\mu}\right)\right|=\left|u\left(\phi_{v}-\phi_{\mu}\right)\right| \leqq C \sum_{|\alpha| \leqq k} \sup ^{2}\left|\partial^{\alpha}\left(\phi_{v}-\phi_{\mu}\right)\right| \rightarrow 0
+\]
+
+That the limit is independent of the sequence chosen follows at once by mixing two sequences. If we apply (2.1.2) to $\phi_{v}$, and let $v \rightarrow \infty$ we conclude that (2.1.2) is valid for all $\phi \in C_{0}^{k}$ with support in the interior of $K$, so the theorem is proved.
+
+Since a measure can be defined to be a linear form on $C_{0}^{0}(X)$ with the continuity property (2.1.2) for $k=0$, we have now identified $\mathscr{D}^{\prime 0}(X)$ with the space of measures in $X$. If an integrable function $f$ is first identified with the measure $f d x$, as is customary in integration theory, and $f d x$ is then identified with a distribution, the result will of course be the same as if we identify $f$ with a distribution directly.
+
+A positive distribution is always a measure:
+
+Theorem 2.1.7. If $u$ is a distribution in $X$ with $u(\phi) \geqq 0$ for all nonnegative $\phi \in C_{0}^{\infty}(X)$, then $u$ is a positive measure.
+
+Proof. We have to show that $u$ is of order 0 . To do so we note that for any compact set $K \subset X$ Theorem 1.4.1 gives a function $\chi \in C_{0}^{\infty}(X)$ with $0 \leqq \chi \leqq 1$ and $\chi=1$ on $K$. Then
+
+\[
+\chi \sup |\phi| \pm \phi \geq 0
+\]
+
+if $\phi \in C_{0}^{\infty}(K)$ is real valued. By hypothesis it follows that
+
+or equivalently that
+
+$u(\chi) \sup |\phi| \pm u(\phi) \geqq 0$
+
+(2.1.6)
+
+$|u(\phi)| \leqq u(\chi) \sup |\phi|, \quad \phi \in C_{0}^{\infty}(K)$.
+
+If we apply this to $\operatorname{Re} e^{i \theta} \phi$ when $\theta$ is real and choose $\theta$ so that $e^{i \theta} u(\phi)$ is real, we obtain (2.1.6) for complex valued $\phi$ also, hence $u \in \mathscr{D}^{\prime 0}$.
+
+$\mathscr{D}^{\prime}(X)$ is obviously a vector space with the natural definition of addition and multiplication by complex numbers,
+
+\[
+\begin{gathered}
+\left(a_{1} u_{1}+a_{2} u_{2}\right)(\phi)=a_{1} u_{1}(\phi)+a_{2} u_{2}(\phi) \\
+\phi \in C_{0}^{\infty}(X), \quad u_{j} \in \mathscr{D}^{\prime}(X), \quad a_{j} \in \mathbb{C}
+\end{gathered}
+\]
+
+We shall always use the weak topology in $\mathscr{D}^{\prime}(X)$ (also called the weak* topology), that is, the topology defined by the semi-norms
+
+\[
+\mathscr{D}^{\prime}(X) \ni u \rightarrow|u(\phi)|
+\]
+
+where $\phi$ is any fixed element of $C_{0}^{\infty}(X)$. Thus $u_{i} \rightarrow u$ means that
+
+\[
+u_{i}(\phi) \rightarrow u(\phi)
+\]
+
+for every $\phi \in C_{0}^{\infty}(X)$. Occasionally we shall need the following completeness property:
+
+Theorem 2.1.8. If $u_{j}$ is a sequence in $\mathscr{D}^{\prime}(X)$ and
+
+
+\begin{equation*}
+u(\phi)=\lim u_{j}(\phi) \tag{2.1.7}
+\end{equation*}
+
+
+exists for every $\phi \in C_{0}^{\infty}(X)$, then $u \in \mathscr{D}^{\prime}(X)$. Thus $u_{j} \rightarrow u$ in $\mathscr{D}^{\prime}(X)$ as $j \rightarrow \infty$. Moreover, (2.1.2) is valid for all $u_{j}$ with constants $C$ and $k$ independent of $j$, and $u_{j}\left(\phi_{j}\right) \rightarrow u(\phi)$ if $\phi_{j} \rightarrow \phi$ in $C_{0}^{\infty}(X)$.
+
+Proof. When $K$ is a compact subset of $X$ the space $C_{0}^{\infty}(K)$ is a Fréchet space with the topology defined by the semi-norms
+
+\[
+\|\phi\|_{\alpha}=\sup \left|\partial^{\alpha} \phi\right|, \quad \phi \in C_{0}^{\infty}(K)
+\]
+
+(The completeness is a consequence of Theorem 1.1.5.) (2.1.2) is valid for $u_{j}$ (with constants $C$ and $k$ which may a priori depend on $j$ ), so $u_{j}$ restricted to $C_{0}^{\infty}(K)$ is a continuous linear form on $C_{0}^{\infty}(K)$. For fixed $\phi \in C_{0}^{\infty}(K)$ it follows from (2.1.7) that the sequence $u_{j}(\phi)$ is bounded. Hence the principle of uniform boundedness (the Banach-Steinhaus theorem) shows that (2.1.2) is valid for all $u_{j}$ with constants $C$ and $k$ independent of $j$. When $j \rightarrow \infty$ we obtain (2.1.2) for the limit $u$. If $\phi_{j} \rightarrow \phi$ in $C_{0}^{\infty}(X)$ we have supp $\phi_{j} \subset K$ for some compact subset $K$ of $X$ and all $j$. Hence $u_{j}\left(\phi_{j}-\phi\right) \rightarrow 0$ by the uniformity of (2.1.2), which proves that $u_{j}\left(\phi_{j}\right) \rightarrow u(\phi)$.
+
+By Cauchy's convergence principle for $\mathbb{C}$ the existence of the limit (2.1.7) means precisely that $u_{j}(\phi)-u_{k}(\phi) \rightarrow 0$ when $j, k \rightarrow \infty$. Hence an equivalent statement of Theorem 2.1.8 is that every sequence $u_{j}$ in $\mathscr{D}^{\prime}(X)$ such that $u_{j}-u_{k} \rightarrow 0$ when $j, k \rightarrow \infty$ must have a limit $u$ in $\mathscr{D}^{\prime}(X)$.
+
+Theorem 2.1.9. If $u_{j} \in \mathscr{D}^{\prime}(X), u_{j} \geqq 0$ and $u_{j} \rightarrow u$ in $\mathscr{D}^{\prime}(X)$, then $u \geqq 0$ and $u_{j} \rightarrow u$ in the weak topology of measures, that is, $u_{j}(\phi) \rightarrow u(\phi)$ for every $\phi \in C_{0}^{0}(X)$.
+
+Proof. That $u \geqq 0$ is obvious, and Theorem 2.1 .7 shows that $u_{j}$ and $u$ are measures. In addition the proof of Theorem 2.1.7 gives for every compact set $K \subset X$ a uniform bound
+
+\[
+\left|u_{j}(\phi)\right| \leqq C_{K} \sup |\phi|, \quad \phi \in C_{0}^{0}(K), \quad \forall j
+\]
+
+Since $u_{j}(\phi) \rightarrow u(\phi)$ for $\phi \in C_{0}^{\infty}(K)$ it follows that this remains true for all $\phi$ in the closure $F$ of $C_{0}^{\infty}(K)$ in $C_{0}^{0}(K)$. By Theorem 1.3.2 $F$ contains all continuous functions with support in the interior of $K$, which proves the theorem
+
+We shall now give some simple examples to indicate what convergence of distributions means in concrete cases. They also illustrate the fact, to be proved in Chapter IV, that every distribution is the limit of a sequence of functions in $C_{0}^{\infty}$.
+
+Example 2.1.10. Let $v \in C_{0}^{\infty}\left(\mathbb{R}^{n}\right)$ and set $u_{\varepsilon}(x)=\varepsilon^{-n} v(x / \varepsilon)$. Then
+
+\[
+u_{\varepsilon}(\phi)=\int \varepsilon^{-n} v(x / \varepsilon) \phi(x) d x=\int v(x) \phi(\varepsilon x) d x \rightarrow \phi(0) \int v(x) d x
+\]
+
+if $\phi \in C_{0}^{\infty}\left(\mathbb{R}^{n}\right)$. (Compare Theorem 1.3.2.)
+
+Example 2.1.11. Let $w \in C_{0}^{\infty}\left(\mathbb{R}^{n}\right)$, assume that $\int x^{\alpha} w(x) d x=0$ when $|\alpha|<k$ and set $u_{\varepsilon}(x)=\varepsilon^{-n-k} w(x / \varepsilon)$. Then we have for $\phi \in C_{0}^{\infty}\left(\mathbb{R}^{n}\right)$
+
+\[
+\begin{aligned}
+u_{\varepsilon}(\phi) & =\int \phi(\varepsilon x) \varepsilon^{-k} w(x) d x=\int\left(\sum_{|\alpha| \leqq k} \varepsilon^{|\alpha|-k} x^{\alpha} \partial^{\alpha} \phi(0) / \alpha !+O(\varepsilon)\right) w(x) d x \\
+& \rightarrow \sum_{|\alpha|=k} \partial^{\alpha} \phi(0) \int x^{\alpha} w(x) d x / \alpha !
+\end{aligned}
+\]
+
+Example 2.1.12. If $u_{t}(x)=t^{N} e^{i t x}, x \in \mathbb{R}$, where $N$ is a positive integer, then
+
+\[
+\begin{aligned}
+u_{t}(\phi) & =\int t^{N} e^{i t x} \phi(x) d x=i \int t^{N-1} e^{i t x} \phi^{\prime}(x) d x=\ldots \\
+& =i^{N+1} t^{-1} \int e^{i t x} \phi^{(N+1)}(x) d x \rightarrow 0 \quad \text { as } t \rightarrow \infty, \quad \phi \in C_{0}^{\infty}(\mathbb{R})
+\end{aligned}
+\]
+
+Example 2.1.13. If $u_{t}(x)=t e^{i t x}, x>0$ and $u_{t}(x)=0, x \leqq 0$, then
+
+\[
+\begin{aligned}
+u_{t}(\phi) & =\int_{0}^{\infty} t e^{i t x} \phi(x) d x=i \phi(0)+i \int_{0}^{\infty} e^{i t x} \phi^{\prime}(x) d x \\
+& =i \phi(0)-\phi^{\prime}(0) / t-\int_{0}^{\infty} e^{i t x} \phi^{\prime \prime}(x) d x / t \rightarrow i \phi(0), \quad \text { as } t \rightarrow \infty
+\end{aligned}
+\]
+
+if $\phi \in C_{0}^{\infty}(\mathbb{R})$.
+
+Example 2.1.14. Let $u_{t}(x)=t^{1 / k} e^{i t x^{k}}, x \in \mathbb{R}$, where $k$ is an integer $>1$. To determine the limit we first examine
+
+\[
+F(x)=\int_{0}^{x} e^{i y^{k}} d y
+\]
+
+When $x>0$ we shift the integration to a segment of the line $\arg z=\pi / 2 k$ and a circular arc, on which $\operatorname{Im} z^{k} \geqq c|z|^{k-1} \operatorname{Im} z$ where $c>0$. It follows that
+
+Hence
+
+\[
+F(x) \rightarrow e^{\pi i / 2 k} \int_{0}^{\infty} e^{-y^{k}} d y \quad \text { as } x \rightarrow \infty
+\]
+
+\[
+\begin{aligned}
+& F(x) \rightarrow-e^{\pi i / 2 k} \int_{0}^{\infty} e^{-y^{k}} d y \quad \text { as } x \rightarrow-\infty \text { if } k \text { is even } \\
+& F(x) \rightarrow-e^{-\pi i / 2 k} \int_{0}^{\infty} e^{-y^{k}} d y \quad \text { as } x \rightarrow-\infty \text { if } k \text { is odd. }
+\end{aligned}
+\]
+
+Now we have if $\phi \in C_{0}^{\infty}(\mathbb{R})$
+
+$u_{t}(\phi)=\int t^{1 / k} F^{\prime}\left(x t^{1 / k}\right) \phi(x) d x=-\int F\left(x t^{1 / k}\right) \phi^{\prime}(x) d x$
+
+\[
+\rightarrow-F(-\infty) \int_{-\infty}^{0} \phi^{\prime}(x) d x-F(\infty) \int_{0}^{\infty} \phi^{\prime}(x) d x=(F(\infty)-F(-\infty)) \phi(0)
+\]
+
+Here
+
+\[
+\begin{aligned}
+F(\infty)-F(-\infty) & =2 \cos \pi / 2 k \int_{0}^{\infty} e^{-y^{k}} d y & & \text { if } k \text { is odd } \\
+& =2 e^{\pi i / 2 k} \int_{0}^{\infty} e^{-y^{k}} d y & & \text { if } k \text { is even }
+\end{aligned}
+\]
+
+which is not 0 . (In terms of the $\Gamma$ function defined in Section 3.2 the integral is equal to $\Gamma((1+k) / k)$.) Note the contrast with the case $k=1$.
+
+\section{Localization}
+If $Y \subset X \subset \mathbb{R}^{n}$ and $u \in \mathscr{D}^{\prime}(X)$, we can restrict $u$ to a distribution $u_{Y}$ in $Y$ by setting
+
+\[
+u_{Y}(\phi)=u(\phi), \quad \phi \in C_{0}^{\infty}(Y)
+\]
+
+Our next purpose is to prove the less trivial fact that a distribution is determined by the restrictions to the sets in an open covering:
+
+Theorem 2.2.1. If $u \in \mathscr{D}^{\prime}(X)$ and every point in $X$ has a neighborhood to which the restriction of $u$ is 0 , then $u=0$.
+
+Proof. If $\phi \in C_{0}^{\infty}(X)$ we can for every $x \in \operatorname{supp} \phi$ find an open neighborhood $Y \subset X$ such that the restriction of $u$ to $Y$ is 0 . By the BorelLebesgue lemma we can choose a finite number of such open sets $Y_{j}$ $\subset X$ which cover supp $\phi$. But according to Theorem 1.4.4 we can then write $\phi=\sum \phi_{j}$ where $\phi_{j} \in C_{0}^{\infty}\left(Y_{j}\right)$. Thus $u\left(\phi_{j}\right)=0$ which proves that $u(\phi)$ $=\sum u\left(\phi_{j}\right)=0$.
+
+Theorem 2.2.1 makes it natural to extend Definition 1.2.2 as fol lows:
+
+Definition 2.2.2. If $u \in \mathscr{D}^{\prime}(X)$ then the support of $u$, denoted supp $u$, is the set of points in $X$ having no open neighborhood to which the restriction of $u$ is 0 .
+
+Thus $X \backslash \operatorname{supp} u$ is the open set of points having a neighborhood in which $u$ vanishes, so $u$ vanishes in $X \backslash \operatorname{supp} u$ by Theorem 2.2.1, and $X \backslash \operatorname{supp} u$ contains every open set where $u$ vanishes. Thus we have
+
+(2.2.1) $\quad u(\phi)=0 \quad$ if $u \in \mathscr{D}^{\prime}(X), \phi \in C_{0}^{\infty}(X)$ and $\operatorname{supp} u \cap \operatorname{supp} \phi=\emptyset$.
+
+Closely related to the notion of support is the notion of singular support:
+
+Definition 2.2.3. If $u \in \mathscr{D}^{\prime}(X)$, then the singular support of $u$, denoted sing supp $u$, is the set of points in $X$ having no open neighborhood to which the restriction of $u$ is a $C^{\infty}$ function.
+
+Since every point in $X \backslash \operatorname{sing} \operatorname{supp} u$ has a neighborhood where $u$ is a $C^{\infty}$ function, it follows from Theorem 2.2.1 that the restriction of $u$ to $X \backslash \operatorname{sing} \operatorname{supp} u$ is a $C^{\infty}$ function. This is not true for any larger open set than $X \backslash \operatorname{sing} \operatorname{supp} u$.
+
+We shall now supplement Theorem 2.2.1 by an existence theorem:
+
+Theorem 2.2.4. Let $X_{i}, i \in I$, be an arbitrary family of open sets in $\mathbb{R}^{n}$, and set $X=\bigcup X_{i}$. If $u_{i} \in \mathscr{D}^{\prime}\left(X_{i}\right)$ and $u_{i}=u_{j}$ in $X_{i} \cap X_{j}$ for all $i, j \in I$, then there exists one and only one $u \in \mathscr{D}^{\prime}(X)$ such that $u_{i}$ is the restriction of u to $X_{i}$ for every $i$.
+
+Proof. The uniqueness is precisely Theorem 2.2.1 and the existence follows from essentially the same proof. If $u$ is a distribution with the required properties we must have
+
+(2.2.2)
+
+\[
+u(\phi)=\sum u_{i}\left(\phi_{i}\right) \quad \text { if } \phi=\sum \phi_{i}, \quad \phi_{i} \in C_{0}^{\infty}\left(X_{i}\right)
+\]
+
+and the sum is finite. By Theorem 1.4.4 every $\phi \in C_{0}^{\infty}(X)$ can be written as such a sum, and we shall prove that $\sum u_{i}\left(\phi_{i}\right)$ is independent of how it is chosen. This will follow if we show that $\sum \phi_{i}=0$ implies $\sum u_{i}\left(\phi_{i}\right)=0$. Set $K=\bigcup \operatorname{supp} \phi_{i}$, which is a compact subset of $X$, and use Theorem 1.4.5 to choose functions $\psi_{k} \in C_{0}^{\infty}\left(X_{k}\right)$ such that $\sum \psi_{k}=1$ in $K$ and the sum is finite. Then we have $\psi_{k} \phi_{i} \in C_{0}^{\infty}\left(X_{k} \cap X_{i}\right)$ so
+
+Hence
+
+\[
+u_{i}\left(\psi_{k} \phi_{i}\right)=u_{k}\left(\psi_{k} \phi_{i}\right)
+\]
+
+\[
+\sum u_{i}\left(\phi_{i}\right)=\sum \sum u_{i}\left(\phi_{i} \psi_{k}\right)=\sum \sum u_{k}\left(\phi_{i} \psi_{k}\right)=\sum u_{k}\left(\psi_{k} \sum \phi_{i}\right)=0
+\]
+
+Having proved that (2.2.2) defines uniquely a linear form on $C_{0}^{\infty}(X)$ we must show that it has the continuity properties required of
+a distribution. Choose any compact set $K \subset X$ and as before functions $\psi_{k} \in C_{0}^{\infty}\left(X_{k}\right)$ with $\sum \psi_{k}=1$ on $K$ and the sum finite. If $\phi \in C_{0}^{\infty}(K)$ we have $\phi=\sum \phi \psi_{k}$ with $\phi \psi_{k} \in C_{0}^{\infty}\left(X_{k}\right)$ so (2.2.2) gives
+
+\[
+u(\phi)=\sum u_{k}\left(\phi \psi_{k}\right)
+\]
+
+Since (2.1.2) is valid for $u_{k}$ and the maximum of the derivatives of $\phi \psi_{k}$ can be estimated in terms of those of $\phi$, we conclude that
+
+\[
+|u(\phi)| \leqq C \sum_{|\alpha| \leqq m} \sup \left|\partial^{\alpha} \phi\right|, \quad \phi \in C_{0}^{\infty}(K)
+\]
+
+which completes the proof. Note that it shows that if $u_{i} \in \mathscr{D}^{\prime k}$ for every $i$ then $u \in \mathscr{D}^{\prime k}$.
+
+Remark. If $u^{v} \in \mathscr{D}^{\prime}(X), v=1,2, \ldots$ and $u^{v}$ restricted to $X_{i}$ has a limit $u_{i} \in$ $\mathscr{D}^{\prime}\left(X_{i}\right)$ for every $i$, then the proof shows that $u^{v}$ has a limit in $\mathscr{D}^{\prime}(X)$. In fact, if we apply (2.2.2) to each $u^{v}$ we find that $u^{v}(\phi)$ has a limit $u(\phi)$ satisfying (2.2.2). The continuity of $u$ follows from the second part of the proof of Theorem 2.2.4 or else from Theorem 2.1.8.
+
+If $u \in L_{\mathrm{loc}}^{1}(X)$, the form
+
+\[
+u(\phi)=\int u \phi d x
+\]
+
+is of course meaningful for every $\phi \in C^{\infty}(X)$ such that
+
+supp $u \cap \operatorname{supp} \phi \Subset X$.
+
+(We write $A \Subset X$ when $\bar{A}$ is compact and contained in $X$.) We shall now prove that the domain of an arbitrary distribution can be extended in this way.
+
+Theorem 2.2.5. Let $u \in \mathscr{D}^{\prime}(X)$ and let $F$ be a relatively closed subset of $X$ containing supp $u$. Then there is one and only one linear form $\tilde{u}$ on $\left\{\phi ; \phi \in C^{\infty}(X), F \cap \operatorname{supp} \phi \Subset X\right\}$ such that
+
+(i) $\tilde{u}(\phi)=u(\phi)$ if $\phi \in C_{0}^{\infty}(X)$,
+
+(ii) $\tilde{u}(\phi)=0$ if $\phi \in C^{\infty}(X)$ and $F \cap \operatorname{supp} \phi=\emptyset$.
+
+The domain of $\tilde{u}$ is of course largest when $F-\operatorname{supp} u$, but we need the uniqueness statement also for other sets $F$.
+
+Proof. a) Uniqueness. Let $\phi \in C^{\infty}(X)$ and let $F \cap \operatorname{supp} \phi=K$ be a compact subset of $X$. By Theorem 1.4.1 we can find $\psi \in C_{0}^{\infty}(X)$ so that $\psi$ $=1$ in a neighborhood of $K$. Then we have $\phi=\phi_{0}+\phi_{1}$ where $\phi_{0}$
+
+$=\psi \phi \in C_{0}^{\infty}(X)$ and $\phi_{1}=(1-\psi) \phi$, so that $F \cap \operatorname{supp} \phi_{1}=\emptyset$. Using (i) and (ii) we obtain
+
+\[
+\tilde{u}(\phi)=\tilde{u}\left(\phi_{0}\right)+\tilde{u}\left(\phi_{1}\right)=u\left(\phi_{0}\right)
+\]
+
+which proves the uniqueness of $\tilde{u}$.
+
+b) Existence. We have seen in a) that every $\phi \in C^{\infty}(X)$ with $F \cap \operatorname{supp} \phi$ compact can be written $\phi=\phi_{0}+\phi_{1}$ with $\phi_{0} \in C_{0}^{\infty}(X)$ and $F \cap \operatorname{supp} \phi_{1}=\emptyset$. If $\phi=\phi_{0}^{\prime}+\phi_{1}^{\prime}$ is another such decomposition, then $\chi$ $=\phi_{0}-\phi_{0}^{\prime} \in C_{0}^{\infty}(X)$ and $F \cap \operatorname{supp} \chi=F \cap \operatorname{supp}\left(\phi_{1}-\phi_{1}^{\prime}\right)=\emptyset$ so it follows from (2.2.1) that $0=u(\chi)=u\left(\phi_{0}\right)-u\left(\phi_{0}^{\prime}\right)$. Setting $\tilde{u}(\phi)=u\left(\phi_{0}\right)$ therefore gives a unique definition of a linear form $u$ which obviously has the required properties.
+
+From now on we write $u(\phi)$ instead of $\tilde{u}(\phi)$ and thus consider $u(\phi)$ as defined for all $u \in \mathscr{D}^{\prime}(X)$ and all $\phi \in C^{\infty}(X)$ satisfying (2.2.3). In view of the symmetry of (2.2.3) we shall sometimes write $\langle u, \phi\rangle$ instead of $u(\phi)$.
+
+\section{Distributions with Compact Support}
+If $u \in \mathscr{D}^{\prime}(X)$ has compact support we have seen that $u(\phi)$ can be defined for all $\phi \in C^{\infty}(X)$. When $\psi \in C_{0}^{\infty}(X)$ and $\psi=1$ in a neighborhood of $\operatorname{supp} u$, we have
+
+\[
+u(\phi)=u(\psi \phi)+u((1-\psi) \phi)=u(\psi \phi), \quad \phi \in C^{\infty}(X)
+\]
+
+Hence it follows from (2.1.2) that
+
+
+\begin{equation*}
+|u(\phi)| \leqq C \sum_{|\alpha| \leqq k} \sup _{K}\left|\partial^{\alpha} \phi\right|, \quad \phi \in C^{\infty}(X) \tag{2.3.1}
+\end{equation*}
+
+
+where $K$ is the support of $\psi$ and $C, k$ are constants. Conversely, suppose that we have a linear form $v$ on $C^{\infty}(X)$ such that for some constants $C$ and $k$ and some compact set $L \subset X$
+
+
+\begin{equation*}
+|v(\phi)| \leqq C \sum_{|\alpha| \leqq k} \sup _{L}\left|\partial^{\alpha} \phi\right|, \quad \phi \in C^{\infty}(X) . \tag{2.3.2}
+\end{equation*}
+
+
+Then the restriction of $v$ to $C_{0}^{\infty}(X)$ is a distribution $u$ with support contained in $L$. Since it follows from (2.3.2) that $v(\phi)=0$ if $L \cap \operatorname{supp} \phi$ $=\emptyset$, we obtain from Theorem 2.2.5 that $v(\phi)=u(\phi)$ for every $\phi \in C^{\infty}(X)$. Hence we have proved
+
+Theorem 2.3.1. The set of distributions in $X$ with compact support is identical with the dual space of $C^{\infty}(X)$ with the topology defined by the semi-norms
+
+\[
+\phi \rightarrow \sum_{|\alpha| \leqq k} \sup _{K}\left|\partial^{\alpha} \phi\right|
+\]
+
+where $K$ ranges over all compact subsets of $X$ and $k$ over all integers $\geqq 0$.
+
+Schwartz used the notation $\mathscr{E}(X)$ for the space $C^{\infty}(X)$ equipped with this topology. Accordingly the space of distributions with compact support in $X$ is denoted by $\mathscr{E}^{\prime}(X)$. From the proof of Theorem 2.3.1 it follows that $\mathscr{E}^{\prime}(X)$ can be identified with the set of distributions in $\mathscr{E}^{\prime}\left(\mathbb{R}^{n}\right)$ with supports contained in $X$. We may therefore use the notation $\mathscr{E}^{\prime}(A)$ also when $A$ is an arbitrary subset of $\mathbb{R}^{n}$ to denote the set of distributions in $\mathscr{E}^{\prime}\left(\mathbb{R}^{n}\right)$ with supports contained in $A$. We write $\mathscr{E}^{\prime k}(A)=\mathscr{E}^{\prime}(A) \cap \mathscr{D}^{\prime k}\left(\mathbb{R}^{n}\right)$.
+
+The smallest $k$ which can be used in (2.3.1) is of course the order of the distribution $u$. For $K$ one can take any neighborhood of supp $u$ but usually not the support itself.
+
+Example 2.3.2. Let $K$ be a compact set in $\mathbb{R}^{n}$ which is not the union of finitely many compact connected sets. Then one can find $u \in \mathscr{E}^{\prime}(K)$ of order 1 so that (2.3.1) is not valid for any $C$ and $k$. In fact, the hypothesis means that we can find a sequence of disjoint non-empty compact subsets $K_{j}$ of $K$ such that $K \backslash\left(K_{1} \cup \ldots \cup K_{j}\right)$ is compact. Choose $x_{j} \in K_{j}$, let $x_{0}$ be a limit point of $\left\{x_{j}\right\}$ and set
+
+\[
+u(\phi)=\sum m_{j}\left(\phi\left(x_{j}\right)-\phi\left(x_{0}\right)\right)
+\]
+
+where $m_{j}$ is a positive sequence such that
+
+\[
+\sum m_{j}\left|x_{j}-x_{0}\right|=1, \quad \sum m_{j}=\infty
+\]
+
+Such a sequence exists since $\lim \inf \left|x_{j}-x_{0}\right|=0$. Then
+
+\[
+|u(\phi)| \leqq \sup \left|\phi^{\prime}\right|
+\]
+
+so $u$ is a distribution. On the other hand, if (2.3.1) is valid and we choose $\phi \in C^{\infty}$ equal to 1 in a neighborhood of $K_{1} \cup \ldots \cup K_{j}$ and 0 near $K \backslash\left(K_{1} \cup \ldots \cup K_{j}\right)$, hence at $x_{0}$, then we obtain
+
+\[
+\sum_{i \leqq j} m_{i} \leqq C
+\]
+
+which is a contradiction when $j \rightarrow \infty$.
+
+Although (2.3.1) is not in general valid with $K=\operatorname{supp} u$ we can prove that the left-hand side must vanish then if the right-hand side does:
+
+\[
+\begin{aligned}
+& \text { Theorem 2.3.3. If } u \in \mathscr{E}^{\prime} \text { is of order } \leqq k \text { and if } \phi \in C^{k} \\
+& (2.3 .3) \quad \partial^{\alpha} \phi(x)=0 \quad \text { for }|\alpha| \leqq k \text { and } x \in \operatorname{supp} u \text {, }
+\end{aligned}
+\]
+
+then it follows that $u(\phi)=0$.
+
+Recall that $u(\phi)$ was defined for all $\phi \in C_{0}^{k}$ in Theorem 2.1.6, and as in Theorem 2.2 .5 we have a unique extension to all $\phi \in C^{k}$, for which $u(\phi)=0$ when $\operatorname{supp} u \cap \operatorname{supp} \phi=\emptyset$. The estimate (2.3.1) is valid for all $\phi \in C^{k}$ if $K$ is a neighborhood of $\operatorname{supp} u$.
+
+Proof of Theorem 2.3.3. By Theorem 1.4.1 and the remarks after it we can choose $\chi_{\varepsilon} \in C_{0}^{\infty}$ so that $\chi_{\varepsilon}=1$ in a neighborhood of $\operatorname{supp} u, \chi_{\varepsilon}=0$ outside
+
+and
+
+\[
+M_{\varepsilon}=\{y ;|x-y| \leqq \varepsilon \text { for some } x \in \operatorname{supp} u\}
+\]
+
+\[
+\left|\partial^{\alpha} \chi_{\varepsilon}\right| \leqq C \varepsilon^{-|\alpha|}, \quad|\alpha| \leqq k
+\]
+
+Since supp $u$ and $\operatorname{supp}\left(1-\chi_{\varepsilon}\right) \phi$ do not intersect, we have
+
+\[
+u(\phi)=u\left(\phi \chi_{\varepsilon}\right)+u\left(\phi\left(1-\chi_{\varepsilon}\right)\right)=u\left(\phi \chi_{\varepsilon}\right)
+\]
+
+so using (2.3.1) we obtain
+
+\[
+\begin{aligned}
+|u(\phi)| & \leqq C \sum_{|\alpha| \leqq k} \sup \left|\partial^{\alpha}\left(\phi \chi_{\varepsilon}\right)\right| \leqq C^{\prime} \sum_{|\alpha|+|\beta| \leqq k} \sup \left|\partial^{\alpha} \phi\right|\left|\partial^{\beta} \chi_{\varepsilon}\right| \\
+& \leqq C^{\prime \prime} \sum_{|\alpha| \leqq k} \varepsilon^{|\alpha|-k} \sup _{\boldsymbol{M}_{\varepsilon}}\left|\partial^{\alpha} \phi\right| .
+\end{aligned}
+\]
+
+To show that the right-hand side tends to 0 with $\varepsilon$ we must prove that
+
+
+\begin{equation*}
+\varepsilon^{|\alpha|-k} \sup _{M_{\varepsilon}}\left|\partial^{\alpha} \phi\right| \rightarrow 0 \quad \text { when } \varepsilon \rightarrow 0 \quad \text { if }|\alpha| \leqq k \text {. } \tag{2.3.4}
+\end{equation*}
+
+
+By the definition of $M_{\varepsilon}$ we can for every $y \in M_{\varepsilon}$ choose $x \in \operatorname{supp} u$ so that $|x-y| \leqq \varepsilon$. This gives (2.3.4) for $|\alpha|=k$ since $\partial^{\alpha} \phi$ is uniformly continuous and vanishes on supp $u$. If $|\alpha|<k$ and $y \in M_{\varepsilon}$ we obtain by Taylor's formula
+
+\[
+\left|\partial^{\alpha} \phi(y)\right| \leqq \frac{1}{(k-|\alpha|) !} \sup _{0<t<1}\left|(d / d t)^{k-|\alpha|}\left(\partial^{\alpha} \phi\right)(x+t(y-x))\right|
+\]
+
+for the derivatives of $\phi$ of order $<k$ vanish at $x$. If the differentiation is carried out we obtain a sum of terms involving a factor $(y-x)^{\beta}$, $|\beta|=k-|\alpha|$, and a derivative of $\phi$ of order $k$, which proves (2.3.4).
+
+An important consequence of Theorem 2.3.3 is the following
+
+Theorem 2.3.4. If $u$ is a distribution of order $k$ with support equal to $\{y\}$, then $u$ has the form
+
+\[
+u(\phi)=\sum_{|\alpha| \leqq k} a_{\alpha} \partial^{\alpha} \phi(y), \quad \phi \in C^{k}
+\]
+
+Proof. If we expand $\phi$ in a Taylor series
+
+\[
+\phi(x)=\sum_{|\alpha| \leqq k} \partial^{\alpha} \phi(y)(x-y)^{\alpha} / \alpha !+\psi(x)
+\]
+
+we have $\partial^{\alpha} \psi(y)=0$ when $|\alpha| \leqq k$ so $u(\psi)=0$ by Theorem 2.3.3. Hence (2.3.5) follows with $a_{\alpha}=u\left((.-y)^{\alpha} / \alpha !\right)$. (. denotes the variable.)
+
+Note that Theorem 2.3.4 explains why the limits in Examples 2.1.10, 2.1.11, 2.1.13, 2.1.14 had to be of the form (2.3.5).
+
+There is a result similar to Theorem 2.3.4 when the point is replaced by a subspace, but the proof is somewhat more complicated:
+
+Theorem 2.3.5. Let $x=\left(x^{\prime}, x^{\prime \prime}\right)$ be a splitting of the variables in $\mathbb{R}^{n}$ in two groups. If $u$ is a distribution in $\mathbb{R}^{n}$ of order $k$ with compact support contained in the plane $x^{\prime}=0$, then
+
+
+\begin{equation*}
+u(\phi)=\sum_{|\alpha| \leqq k} u_{\alpha}\left(\phi_{\alpha}\right) \tag{2.3.6}
+\end{equation*}
+
+
+where $u_{\alpha}$ is a distribution of compact support and order $k-|\alpha|$ in the $x^{\prime \prime}$ variables, $\alpha=\left(\alpha^{\prime}, 0\right)$ and
+
+\[
+\phi_{\alpha}\left(x^{\prime \prime}\right)=\left.\partial^{\alpha} \phi\left(x^{\prime}, x^{\prime \prime}\right)\right|_{x^{\prime}=0} .
+\]
+
+Proof. If $\phi \in C^{\infty}$ and we form the Taylor expansion in $x^{\prime}$,
+
+\[
+\phi(x)=\sum_{\left|\alpha^{\prime}\right| \leqq k, \alpha^{\prime \prime}=0} \partial^{\alpha} \phi\left(0, x^{\prime \prime}\right) x^{\prime \alpha} / \alpha !+\Phi(x)
+\]
+
+then $\partial^{\alpha} \Phi(x)=0$ when $x^{\prime}=0$ and $|\alpha| \leqq k$ so $u(\Phi)=0$. Thus $u(\phi)$ has the form (2.3.6) with
+
+\[
+u_{\alpha}(\psi)=u\left(\psi\left(x^{\prime \prime}\right) x^{\prime \alpha} / \alpha !\right)
+\]
+
+What is not obvious is that $u_{\alpha}$ is of order $k-|\alpha|$ and not just of order $k$. To prove that we observe that $u_{\alpha}(\psi)=u(\phi)$ for all $\phi \in C^{\infty}$ such that
+
+
+\begin{equation*}
+\phi(x)=\psi\left(x^{\prime \prime}\right) x^{\prime \alpha} / \alpha !+O\left(\left|x^{\prime}\right|^{k+1}\right) \quad \text { as } \quad x^{\prime} \rightarrow 0 \tag{2.3.7}
+\end{equation*}
+
+
+By repeated application of Corollary 1.3.4 to one $x^{\prime}$ variable at a time, we find that for any $\psi \in C^{k-|x|}$ one can find $\phi \in C^{k}$ satisfying (2.3.7). The proof shows that if $\psi \in C^{\infty}$ one can find $\phi \in C^{\infty}$ so that for any given compact set $K \subset \mathbb{R}^{n}$
+
+\[
+\sum_{|\gamma| \leqq k} \sup _{\mathbf{K}}\left|\partial^{\gamma} \phi\right| \leqq C \sum_{|\beta| \leqq k-|\alpha|} \sup \left|\partial^{\beta} \psi\right|
+\]
+
+Hence we obtain
+
+\[
+\left|u_{\alpha}(\psi)\right| \leqq C^{\prime} \sum_{|\beta| \leqq k-|\alpha|} \sup \left|\partial^{\beta} \psi\right|, \quad \psi \in C_{0}^{\infty}
+\]
+
+which completes the proof.
+
+For the sake of completeness we shall finally discuss a more general method for extending functions than Corollary 1.3.4 and examine its implications for the structure of distributions with given support.
+
+If $u \in C^{k}\left(\mathbb{R}^{n}\right)$ we denote its Taylor polynomial of order $k$ at $y$ by $u_{k}(x, y)$ or $u(x, y)$ for short,
+
+\[
+u(x, y)=\sum_{|\alpha| \leqq k} \partial^{\alpha} u(y)(x-y)^{\alpha} / \alpha !
+\]
+
+We denote the remainder term by $R(x, y)$, thus $u(x)=u(x, y)+R(x, y)$. Note that
+
+\[
+\partial_{x}^{\alpha} R(x, y)=\partial^{\alpha} u(x)-\sum_{|\beta| \leqq k-|\alpha|} \partial^{\alpha+\beta} u(y)(x-y)^{\beta} / \beta !
+\]
+
+is determined by the derivatives of $u$ at $x$ and at $y$ only. By Taylor's formula the quotient $\left|\partial_{x}^{\alpha} R(x, y)\right| /|x-y|^{k-|\alpha|}$ is continuous in $\mathbb{R}^{n} \times \mathbb{R}^{n}$ if it is defined as 0 on the diagonal.
+
+Theorem 2.3.6 (Whitney's Extension Theorem). Let $K$ be a compact set in $\mathbb{R}^{n}$ and $u_{\alpha},|\alpha| \leqq k$, continuous functions on $K$. Set for $|\alpha| \leqq k$
+
+\[
+U_{\alpha}(x, y)=\left|u_{\alpha}(x)-\sum_{|\beta| \leqq k-|x|} u_{\alpha+\beta}(y)(x-y)^{\beta} / \beta !\right||x-y|^{|\alpha|-k}
+\]
+
+when $x, y \in K$ and $x \neq y, U_{\alpha}(x, x)=0$ when $x \in K$. If $U_{\alpha}$ is continuous on $K \times K$ when $|\alpha| \leqq k$, it is possible to find $v \in C^{k}\left(\mathbb{R}^{n}\right)$ with $\partial^{\alpha} v(x)=u_{\alpha}(x)$, $x \in K,|\alpha| \leqq k$. One can then choose $v$ so that with $C$ depending only on $K$
+
+
+\begin{equation*}
+\sum_{|\alpha| \leqq k} \sup \left|\partial^{\alpha} v\right| \leqq C\left(\sum_{|\alpha| \leqq k} \sup _{K \times K} U_{\alpha}+\sum_{|\alpha| \leqq k} \sup _{K}\left|u_{\alpha}\right|\right) . \tag{2.3.8}
+\end{equation*}
+
+
+We have already observed the necessity of the condition in the theorem, and the proof of sufficiency will depend on the following
+
+Lemma 2.3.7. There exists a partition of unity $1=\sum \phi_{j}$ in $\lceil K$ such that no point is in the support of more than $N$ functions $\phi_{j}$, the diameter of the support of $\phi_{j}$ is at most twice its distance to $K$, and
+
+
+\begin{equation*}
+\left|\partial^{\alpha} \phi_{j}(x)\right| \leqq C_{\alpha} d(x)^{-|\alpha|}, \quad x \notin K \tag{2.3.9}
+\end{equation*}
+
+
+where $d(x)$ is the distance from $x$ to $K$.
+Proof. This is a special case of Theorem 1.4 .10 with the metric chosen as in Example 1.4.8 where $F=K$.
+
+Proof of Theorem 2.3.6. Choose for every $j$ a point $y_{j} \in K$ with minimal distance to $\operatorname{supp} \phi_{j}$. With
+
+\[
+u(x, y)=\sum_{|\alpha| \leqq k} u_{\alpha}(y)(x-y)^{\alpha} / \alpha !
+\]
+
+denoting the expected Taylor expansion of $v$ at $y \in K$, we set
+
+\[
+v(x)=\sum \phi_{j}(x) u\left(x, y_{j}\right), \quad x \notin K ; \quad v(x)=u_{0}(x), \quad x \in K
+\]
+
+Choose $x^{*} \in K$ with $\left|x-x^{*}\right|=d(x)$. If $x$ is in the support of $\phi_{j}$ then the distance from supp $\phi_{j}$ to $K$ is at most $d(x)$, the diameter is at most $2 d(x)$, so $\left|x-y_{j}\right| \leqq 3 d(x)$ and $\left|x^{*}-y_{j}\right| \leqq 4 d(x)$. If $y$ is an arbitrary point in $K$ then
+
+
+\begin{equation*}
+|v(x)-u(x, y)|=o\left(|x-y|^{k}\right) \tag{2.3.10}
+\end{equation*}
+
+
+uniformly in $y$. If $x \in K$ this follows from the continuity of $U_{0}(x, y)$. Otherwise we use the fact that
+
+\[
+|v(x)-u(x, y)| \leqq \sum \phi_{j}(x)\left|u\left(x, y_{j}\right)-u(x, y)\right| .
+\]
+
+Here $\left|x-y_{j}\right| \leqq 3 d(x) \leqq 3|x-y|$ when $\phi_{j}(x) \neq 0$. When $|\gamma| \leqq k$ we have
+
+
+\begin{align*}
+& \left|\partial_{x}^{\gamma}\left(u\left(x, y_{1}\right)-u\left(x, y_{2}\right)\right)\right|  \tag{2.3.11}\\
+& \quad=o\left(\left(\left|x-y_{1}\right|+\left|y_{1}-y_{2}\right|\right)^{k-|\gamma|}\right) \quad \text { if } y_{1}, y_{2} \in K
+\end{align*}
+
+
+for $\partial_{x}^{\gamma}\left(u\left(x, y_{1}\right)-u\left(x, y_{2}\right)\right)$ is a polynomial in $x$ of degree $k-|\gamma|$ and
+
+\[
+\begin{aligned}
+& \mid \partial_{x}^{\beta} \partial_{x}^{\gamma}\left(u\left(x, y_{1}\right)-u\left(x, y_{2}\right)\right)_{x=y_{1}} ! \\
+& \quad=U_{\beta+\gamma}\left(y_{1}, y_{2}\right)\left|y_{1}-y_{2}\right|^{k-|\beta|-|\gamma|}=o\left(\left|y_{1}-y_{2}\right|^{k-|\beta+\gamma|}\right)
+\end{aligned}
+\]
+
+(2.3.11) with $\gamma=0$ gives (2.3.10); the general case will be useful later on
+
+From (2.3.10) it follows that $v$ is continuous and if $k \geqq 1$ also that $v$ is differentiable at any point $y \in K$, with differential $\left.d_{x} u(x, y)\right|_{x=y}$. When $x \notin K$ and $k>0$ we obtain by differentiation
+
+
+\begin{equation*}
+\partial_{v} v(x)=\sum \partial_{v} \phi_{j}(x) u\left(x, y_{j}\right)+\sum \phi_{j}(x) \partial_{v} u\left(x, y_{j}\right) \tag{2.3.12}
+\end{equation*}
+
+
+Set $v_{v}(x)=\sum \phi_{j}(x) \partial_{v} u\left(x, y_{j}\right), x \notin K$, and $v_{v}(x)=u_{\alpha_{v}}(x), x \in K$, where $\alpha_{v}$ $=(0, \ldots, 1,0, \ldots)$ with 1 just in the $v$-th place. If our contentions are already proved with $k$ replaced by $k-1$ then $v_{v} \in C^{k-1}$. If we prove that the first sum in (2.3.12) and its derivatives of order $\leqq k-1$ tend to 0 when $x \rightarrow K$, it follows in view of Corollary 1.1.2 (in $n$ variables)
+
+that $\partial_{v} v$ is continuous and in fact in $C^{k-1}$, and that $\partial^{\alpha} v=u_{\alpha}$ on $K$, $|\alpha| \leqq k$.
+
+Now we have for $x \notin K$ when $|\beta|+|\gamma| \leqq k$ and $\beta \neq 0$
+
+\[
+\sum \partial^{\beta} \phi_{j}(x) \partial_{x}^{\gamma} u\left(x, y_{j}\right)=\sum \partial^{\beta} \phi_{j}(x) \partial_{x}^{\gamma}\left(u\left(x, y_{j}\right)-u\left(x, x^{*}\right)\right)
+\]
+
+because $\sum \partial^{\beta} \phi_{j}(x)=0$ when $\beta \neq 0$. Recalling that $\left|x-y_{j}\right| \leqq 3 d(x)$ we obtain from (2.3.11) and (2.3.9)
+
+\[
+\sum \partial^{\beta} \phi_{j}(x) \partial_{x}^{\gamma} u\left(x, y_{j}\right)=o\left(d(x)^{-|\beta|+k-|\gamma|}\right)
+\]
+
+which proves the assertion on the first sum in (2.3.12). The preceding estimate and a trivial bound for
+
+\[
+\sum \phi_{j}(x) \partial_{x}^{x} u\left(x, y_{j}\right)
+\]
+
+give, if we pay attention to constants also, that
+
+\[
+\sum_{|\alpha| \leqq k}\left|\partial^{\alpha} v(x)\right| \leqq C(1+d(x))^{k}\left(\sum_{|\alpha| \leqq k} \sup _{\boldsymbol{K} \times K} U_{\alpha}+\sum_{|\alpha| \leqq k} \sup _{\boldsymbol{K}}\left|u_{\alpha}\right|\right) .
+\]
+
+Now if we drop from the definition of $v$ the terms for which supp $\phi_{j}$ has distance $>1$ from $K$, we do not change $v$ where $d(x)<1$ but we make $v(x)=0$ when $d(x)>3$, so (2.3.8) follows.
+
+Corollary 2.3.8. If $u$ is a distribution of order $k$ and compact support $K$, then
+
+(2.3.13) $|u(\phi)| \leqq C\left(\sum_{|\alpha| \leq k} \sup _{x, y \in K, x \neq y}\left|\partial^{\alpha} \phi(x)-\sum_{|\beta| \leq k-|\alpha|} \partial^{\alpha+\beta} \phi(y)(x-y)^{\beta} / \beta !\right|\right.$
+
+\[
+\left.\cdot|x-y|^{|\alpha|-k}+\sum_{|\alpha| \leqq k} \sup _{K}\left|\partial^{\alpha} \phi\right|\right), \quad \phi \in C^{\infty} .
+\]
+
+Proof. If we apply Theorem 2.3 .6 with $u_{\alpha}=\left.\partial^{\alpha} \phi\right|_{K}$ we obtain a function $v$ with $u(v-\phi)=0$, by Theorem 2.3.3. Hence
+
+\[
+|u(\phi)|=|u(v)| \leqq C \sum_{|\alpha| \leqq k} \sup \left|\partial^{\alpha} v\right|
+\]
+
+and (2.3.13) therefore follows from (2.3.8).
+
+Example 2.3.2 shows that the first sum on the right-hand side cannot be omitted if $K$ is not a finite union of compact connected sets. By Banach's theorem we also know that every continuous linear form with respect to the seminorm in the right-hand side of (2.3.13) is continuous with respect to the seminorm $\sum_{|\alpha| \leqq k} \sup _{K}\left|\partial^{\alpha} \phi\right|$ if and only if the first sum in (2.3.13) can be estimated by the second one. A necessary condition for this is given in the following
+
+Theorem 2.3.9. Let $K$ be a compact connected set and assume that
+
+
+\begin{equation*}
+\sup _{x, y \in K, x \neq y}|\psi(x)-\psi(y)| /|x-y| \leqq C \sum_{|\alpha| \leqq 1} \sup _{K}\left|\partial^{\alpha} \psi\right|, \quad \psi \in C^{\infty} \tag{2.3.14}
+\end{equation*}
+
+
+Then there is a constant $C^{\prime}$ such that any two points $x, y \in K$ can be joined by a rectifiable curve in $K$ with length $\leqq C^{\prime}|x-y|$.
+
+Proof. Fix two points $x_{0}, y_{0} \in K$. If $X$ is a connected open neighborhood of $K$ we denote by $d(y)$ the infimum of the length of polygonal arcs from $x_{0}$ to $y$ contained in $X$. If $u(y)=\min \left(d(y), d\left(y_{0}\right)\right)$ then $u\left(x_{0}\right)=0$ and $u\left(y_{0}\right)=d\left(y_{0}\right)$, and we have
+
+(2.3.15)
+
+\[
+|u(x)-u(y)| \leqq|x-y| \quad \text { if }[x, y] \subset X .
+\]
+
+Define $u_{\phi}$ according to Theorem 1.3 .2 with $\phi$ of so small support that $u_{\phi}$ is defined in a neighborhood of $K$. In view of (2.3.15) we have
+
+\[
+\left|u_{\dot{\phi}}(x)-u_{\dot{\phi}}(y)\right| \leqq|x-y|
+\]
+
+in a neighborhood of $K$ when $|x-y|$ is small, hence $\left|\partial_{i} u_{\phi}\right| \leqq 1$ on $K$. With $\psi=u_{\phi}$ we obtain from (2.3.14)
+
+\[
+\left|u_{\phi}\left(x_{0}\right)-u_{\phi}\left(y_{0}\right)\right| \leqq\left|x_{0}-y_{0}\right| C\left(d\left(y_{0}\right)+n\right) .
+\]
+
+Letting supp $\phi \rightarrow\{0\}$ we conclude that
+
+\[
+d\left(y_{0}\right) \leqq\left|x_{0}-y_{0}\right| C\left(d\left(y_{0}\right)+n\right)
+\]
+
+When $\left|x_{0}-y_{0}\right| \leqq 1 / 2 C$ it follows that $d\left(y_{0}\right) \leqq 2 n C\left|x_{0}-y_{0}\right|$. For any $\varepsilon>0$ the set
+
+\[
+K_{\varepsilon}=\{x ;|x-y|<\varepsilon \text { for some } y \in K\}
+\]
+
+is a connected neighborhood of $K$ since $K$ is connected. Hence it contains an arc of length $<2 n C\left|x_{0}-y_{0}\right|+\varepsilon$ from $x_{0}$ to $y_{0}$. Representing it as a function of the arc length we obtain when $\varepsilon \rightarrow 0$ a curve of length $\leqq 2 n C\left|x_{0}-y_{0}\right|$ from $x_{0}$ to $y_{0}$ which is contained in $K$, provided that $\left|x_{0}-y_{0}\right| \leqq 1 / 2 C$. Since $K$ is compact and connected this proves the theorem.
+
+The conditions given in Example 2.3.2 and Theorem 2.3.9 are also sufficient:
+
+Theorem 2.3.10. Let $K$ be a compact set in $\mathbb{R}^{n}$ with finitely many connected components such that any two points $x, y$ in the same component can be joined by a rectifiable curve in $K$ of length $\leqq C|x-y|$. If $u$ is a distribution of order $k$ with supp $u \subset K$, it follows then that
+
+
+\begin{equation*}
+|u(\phi)| \leqq C \sum_{|\alpha| \leqq k} \sup _{K}\left|\partial^{\alpha} \phi\right|, \quad \phi \in C^{k}\left(\mathbb{R}^{n}\right) \tag{2.3.16}
+\end{equation*}
+
+
+Proof. Let $s \rightarrow x(s)$ be a curve in $K$ with $x(0)=y$ and arc length $s$. Then
+
+if
+
+
+\begin{equation*}
+\left|F_{\alpha}(s)\right| \leqq C s^{k-|\alpha|} \sum_{|\beta|=k} \sup _{K}\left|\partial^{\beta} \phi\right|, \quad|\alpha| \leqq k, \tag{2.3.17}
+\end{equation*}
+
+
+\[
+F_{\alpha}(s)=\partial^{\alpha} \phi(x(s))-\sum_{|\beta| \leqq k-|\alpha|} \partial^{\alpha+\beta} \phi(y)(x(s)-y)^{\beta} / \beta !
+\]
+
+This is obvious when $|\alpha|=k$. If $|\alpha|<k$ and (2.3.17) is already proved for derivatives of higher order, we conclude that
+
+\[
+\left|d F_{\alpha}(s) / d s\right| \leqq C n s^{k-|\alpha|-1} \sum_{|\beta|=k} \sup _{K}\left|\partial^{\beta} \phi\right|
+\]
+
+Since $F_{\alpha}(0)=0$ we obtain (2.3.17) with $C$ replaced by $C n$. If $d(x, y)$ is the infimum of the lengths of curves from $y$ to $x$ in $K$ then (2.3.17) gives
+
+
+\begin{align*}
+& \left|\partial^{\alpha} \phi(x)-\sum_{|\beta| \leqq k-|\alpha|} \partial^{\alpha+\beta} \phi(y)(x-y)^{\beta} / \beta !\right|  \tag{2.3.17}\\
+& \quad \leqq C d(x, y)^{k-|\alpha|} \sum_{|\beta|=k} \sup _{K}\left|\partial^{\beta} \phi\right| .
+\end{align*}
+
+
+When $d(x, y) \leqq C|x-y|$ the estimate (2.3.16) follows from (2.3.13) and (2.3.17)'
+
+Theorem 2.3.11. Let $K$ be a compact set in $\mathbb{R}^{n}$ with finitely many connected components and assume that any two points in the same component can be joined by a rectifiable curve in $K$ of length at most $C|x-y|^{\gamma}$. If $u$ is a distribution of order $k$ with $\operatorname{supp} u \subset K$ and if $m$ is an integer with $m \gamma \geqq k$, then
+
+
+\begin{equation*}
+|u(\phi)| \leqq C \sum_{|\alpha| \leqq m} \sup _{\boldsymbol{K}}\left|\partial^{\alpha} \phi\right|, \quad \phi \in C^{\infty} \tag{2.3.18}
+\end{equation*}
+
+
+Proof. We use (2.3.13) combined with (2.3.17), now with $k$ replaced by $m$, noting that since $\gamma \leqq 1$
+
+\[
+|x-y|^{\gamma(m-|\alpha|)} \leqq|x-y|^{k-|\alpha|} \quad \text { if }|x-y|<1
+\]
+
+Sets satisfying the hypotheses in Theorem 2.3.11 are sometimes called regular in the sense of Whitney.
+
+\section*{Notes}
+As mentioned in the introduction the definition of distributions used here is that of Schwartz [1]. One of its advantages is that it suggests naturally the proof of existence theorems for differential equations by duality (the Hahn-Banach theorem). Such ideas had already led Sobolev [1] rather far towards a distribution theory.
+
+Other spaces of test functions give different spaces of distributions. In Chapter VII we shall define a space $\mathscr{S}^{\prime}$ with $\mathscr{E}^{\prime}\left(\mathbb{R}^{n}\right) \subset \mathscr{S}^{\prime} \subset \mathscr{D}^{\prime}\left(\mathbb{R}^{n}\right)$ by using as test functions a subspace $\mathscr{S}$ of $C^{\infty}\left(\mathbb{R}^{n}\right)$ restricted by global conditions. Any non-quasi-analytic class of functions can be used as test functions for a distribution space with properties similar to those of Schwartz distributions. This has been done by Beurling [1] (see also Björck [1]). One can also use quasi-analytic classes of test functions but localization is much harder then. The typical real analytic class will be studied in Chapter IX. Also spaces of entire analytic functions can be used as test functions for special purposes (see Gelfand and Šilov [1]), but one is then rather far removed from the intuitive notion of a generalized function.
+
+The topology in $C_{0}^{\infty}(X)$ defined by the semi-norms in the righthand side of (2.1.3) is the inductive limit of the topology in $C_{0}^{\infty}(K)$ when the compact set $K$ increases to $X$, so it is a $\mathscr{L} \mathscr{F}$ topology. (See Dieudonné-Schwartz [1].) We have avoided this terminology in order not to encourage the once common misconception that familiarity with $\mathscr{L} \mathscr{F}$ spaces is essential for the understanding of distribution theory. The convenient explicit form of the semi-norms in (2.1.3) has been adopted from Gårding and Lions [1], and it will occasionally be important later. (For an example see Section 10.7.)
+
+The problem of estimating $u(\phi)$ by means of $\phi$ and its derivatives in supp $u$ only was discussed in Schwartz [1] where Example 2.3.2 and Theorems 2.3.10, 2.3.11 are given in an only slightly different form. Corollary 2.3.8 and Theorem 2.3.9 were proved in Glaeser [1] (see also Hörmander [5]). The main point is of course the extension theorem 2.3.6 of Whitney [1]. His results are actually stronger and cover also the extension of $C^{\infty}$ functions. In that case the extended function $v$ does not depend linearly on the given data $u_{\alpha}$. A linear extension of $C^{\infty}$ functions from a half space to the whole space has been given by Seeley [2].

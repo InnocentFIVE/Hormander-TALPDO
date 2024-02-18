@@ -1,0 +1,16 @@
+\special{dvipdfmx:config z 0}
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{pgffor}
+\usepackage{tikz}
+\usepackage{geometry}
+
+\geometry{papersize={280mm,420mm}}
+\pagestyle{empty}
+\begin{document}
+    \foreach \i in {1,...,111}
+    {\tikz[remember picture, overlay]{\node at ([xshift=-70mm,yshift=105mm]current page.center){\includegraphics[width=140mm,height=210mm,page=\fpeval{4*\i-3}]{source new.pdf}};}
+    \tikz[remember picture, overlay]{\node at ([xshift=70mm,yshift=105mm]current page.center){\includegraphics[width=140mm,height=210mm,page=\fpeval{4*\i-1}]{source new.pdf}};}
+    \tikz[remember picture, overlay]{\node at ([xshift=-70mm,yshift=-105mm]current page.center){\includegraphics[width=140mm,height=210mm,page=\fpeval{4*\i-2}]{source new.pdf}};}
+    \tikz[remember picture, overlay]{\node at ([xshift=70mm,yshift=-105mm]current page.center){\includegraphics[width=140mm,height=210mm,page=\fpeval{4*\i}]{source new.pdf}};}\clearpage}
+\end{document}

@@ -1,0 +1,77 @@
+\chapter*{Introduction}
+In differential calculus one encounters immediately the unpleasant fact that not every function is differentiable. The purpose of distribution theory is to remedy this flaw; indeed, the space of distributions is essentially the smallest extension of the space of continuous functions where differentiation is always well defined. Perhaps it is therefore self evident that it is desirable to make such an extension, but let us anyway discuss some examples of how awkward it is not to be allowed to differentiate.
+
+Our first example is the Fourier transformation which will be studied in Chapter VII. If $v$ is an integrable function on the real line then the Fourier transform $F v$ is the continuous function defined by
+\[
+	(F v)(\xi)=\int_{-\infty}^{\infty} e^{-i x \xi} v(x) d x, \quad \xi \in \mathbb{R}
+\]
+It has the important property that
+\begin{equation}
+	F(D v)=M F v, \quad F(M v)=-D F v
+\end{equation}
+whenever both sides are defined; here $D v(x)=-i d v / d x$ and $M v(x)$ $=x v(x)$. In the first formula the multiplication operator $M$ is always well defined so the same ought to be true for $D$. Incidentally the second formula (1) then suggests that one should also define $F$ for functions of polynomial increase.
+
+Next we shall examine some examples from the theory of partial differential equations which also show the need for a more general definition of derivatives. Classical solutions of the Laplace equation
+\begin{equation}
+	\frac{\partial^{2} u}{\partial x^{2}}+\frac{\partial^{2} u}{\partial y^{2}}=0
+\end{equation}
+or the wave equation (in two variables)
+\begin{equation}
+	\frac{\partial^{2} v}{\partial x^{2}}-\frac{\partial^{2} v}{\partial y^{2}}=0
+\end{equation}
+are twice continuously differentiable functions satisfying the equations everywhere. It is easily shown that uniform limits of classical solutions of the Laplace equation are classical solutions. On the other hand, the classical solutions of the wave equation are all functions of the form
+\begin{equation}
+	v(x, y)=f(x+y)+g(x-y)
+\end{equation}
+with twice continuously differentiable $f$ and $g$, and they have as uniform limits all functions of the form (4) with $f$ and $g$ continuous. All such functions ought therefore to be recognized as solutions of (3) so the definition of a classical solution is too restrictive.
+
+Let us now consider the corresponding inhomogeneous equations
+\begin{gather}
+	 \frac{\partial^{2} u}{\partial x^{2}}+ \frac{\partial^{2} u}{\partial y^{2}}=F \\
+	 \frac{\partial^{2} v}{\partial x^{2}}- \frac{\partial^{2} v}{\partial y^{2}}=F
+\end{gather}
+where $F$ is a continuous function vanishing outside a bounded set. If $F$ is continuously differentiable a solution of (6) is given by
+\begin{equation}
+	v(x, y)= \frac{1}{2}\iint_{\eta-y+|x-\xi|<0}-F(\xi, \eta) d \xi d \eta.
+\end{equation}
+However, (7) defines a continuously differentiable function $v$ even if $F$ is just continuous. Clearly we must accept $v$ as a solution of (6) even if second order derivatives do not exist. Similarly (5) has the classical solution
+\begin{equation}
+	u(x, y)=(4 \pi)^{-1} \iint F(\xi, \eta) \log \left((x-\xi)^{2}+(y-\eta)^{2}\right) d \xi d \eta
+\end{equation}
+provided that $F$ is continuously differentiable. Again (8) defines a continuously differentiable function $u$ even if $F$ is just continuous, and we should be able to accept $u$ as a solution of (5) also in that case.
+
+The difficulties which are illustrated in their simplest form by the preceding examples were eliminated already by the concept of weak solution which preceded distribution theory. The idea is to rewrite the equation considered in a form where the unknown function $u$ is no longer differentiated. Consider as an example the equation (6). If $u$ is a classical solution it follows that
+\begin{equation}
+    \label{6'}
+	\iint\left(\frac{\partial^{2} u}{\partial x^{2}}-\frac{\partial^{2} u}{\partial y^{2}}\right) \phi d x d y=\iint F \phi d x d y
+\end{equation}
+for every continuous function $\phi$ vanishing outside a compact, that is, closed and bounded, set. Conversely, if ( 6$)^{\prime}$ is fulfilled for all such $\phi$ which are say twice continuously differentiable then (6) is fulfilled. In fact, if (6) were not satisfied at a point $\left(x_{0}, y_{0}\right)$ we could take $\phi$ nonnegative and 0 outside a small neighborhood of $\left(x_{0}, y_{0}\right)$ and conclude that (6)' is not fulfilled either. For such "test functions" $\phi$ we can integrate by parts twice in the left-hand side of (6)' which gives the equivalent formula
+
+Summing up, if $u$ is twice continuously differentiable then (6) is equivalent to the validity of $(6)^{\prime \prime}$ for all test functions $\phi$, that is, twice continuously differentiable functions $\phi$ vanishing outside a compact set. However, $(6)^{\prime \prime}$ has a meaning if $u$ is just continuous, and one calls $u$ a weak solution of (6) when (6) ${ }^{\prime \prime}$ is valid.\footnote{Note that differential equations appear naturally in a weak form in the calculus of variations.}
+It is easily verified that the flaws of the classical solutions pointed out above disappear if one accepts weak continuous solutions.
+
+The function $F$ is uniquely determined by $u$ when $(6)^{\prime \prime}$ is fulfilled. However, for an arbitrary continuous function $u$ there may be no continuous function $F$ such that
+\begin{equation}
+	L(\phi)=\iint u\left(\frac{\partial^{2} \phi}{\partial x^{2}}-\frac{\partial^{2} \phi}{\partial y^{2}}\right) d x d y
+\end{equation}
+can be written in the form
+\begin{equation}
+	L(\phi)=\iint F \phi d x d y
+\end{equation}
+Distribution theory goes beyond the definition of weak solutions by accepting for study expressions $L$ of the form (9) even when they are not of the form (10). A distribution is any such expression which depends linearly on a test function $\phi$ (and its derivatives). When it can be written in the form (10) it is identified with the function $F$. It turns out that one can extend the basic operations of calculus to distributions; in particular differentiation is always defined.
+
+Let us also consider some examples of similar expressions occurring in physics. First consider a point mass with weight $1$ at a point $a$ on the real axis. This can be considered as a limiting case of a mass distribution with uniform density $1 / 2 \varepsilon$ in the interval $(a-\varepsilon, a+\varepsilon)$ as $\varepsilon \rightarrow 0$. The corresponding functional is
+\[
+	L_{\varepsilon}(\phi)= \frac{1}{2 \varepsilon}\int_{a-\varepsilon}^{a+\varepsilon} \phi(x) d x
+\]
+When $\varepsilon \rightarrow 0$ we have $L_{\varepsilon}(\phi) \rightarrow \phi(a)$, so $L(\phi)=\phi(a)$ should represent the unit mass at $a$. This interpretation is of course standard in measure theory.
+
+Next we consider a dipole at 0 with moment 1 . This may be defined as the limit of the pointmass $1 / \delta$ at $\delta$ and $-1 / \delta$ at 0 as $\delta \rightarrow 0$. Thus we must consider the limit of the functional
+\[
+	M_{\delta}(\phi)=\delta^{-1} \phi(\delta)-\delta^{-1} \phi(0)
+\]
+when $\delta \rightarrow 0$, which is $M(\phi)=\phi^{\prime}(0)$. This functional is therefore the appropriate description of the dipole.
+
+It is possible to pursue this development and define distributions as limits of functionals of the form (10). However, we shall not do so but rather follow the path suggested by the definition of weak derivatives. This is the original definition of Schwartz and it has the advantage of avoiding the question which limits define the same distribution.
+
+The formal definition of distributions is given in Chapter II after properties of test functions have been discussed at some length in Chapter I. Differentiation of distributions is then studied in Chapter III; it is shown in Section 4.4 that we have indeed obtained a minimal extension of the space of continuous functions where differentiation is always possible. In Chapters IV, V, VI we extend convolution, direct product and composition from functions to distributions. Chapter VII is devoted to Fourier analysis of functions and distributions. The choice of material differs a great deal from standard texts since it is dictated by what is required in the later parts. The method of stationary phase is given a particularly thorough treatment. In Chapter VIII we discuss the Fourier analysis of singularities of distributions. This turns out to be a local problem so it can be discussed also for distributions on manifolds. The phrase "singularity" above is deliberately vague; in fact we shall consider singularities both from a $C^{\infty}$ and from an analytic point of view. The results lead to important extensions of the distribution theory in Chapters III-VI. For instance, one can define the restriction of a distribution $u$ to a submanifold $Y$ if $u$ has no singularity at a normal to $Y$. Many applications to regularity and uniqueness of solutions of differential equations are also given. The analytic theory is continued in Chapter IX which is devoted to hyperfunctions. These are defined just as distributions but with real analytic test functions. The main new difficulty stems from the fact that there are no such test functions vanishing outside a compact set.
